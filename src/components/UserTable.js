@@ -42,7 +42,7 @@ import ModalExample from './ModalExample';
          }
           
        </tbody>
-       {/* <ModalExample/> */}
+        {/* <ModalExample/> */}
    </Table>
    
   )

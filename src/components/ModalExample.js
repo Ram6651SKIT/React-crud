@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, Modal, ModalHeader,  ModalFooter } from 'reactstrap';
 import AddUserForm from './AddUserForm';
+import New from '../New'
 
 class ModalExample extends React.Component {
   constructor(props) {
@@ -24,7 +25,7 @@ class ModalExample extends React.Component {
         <Button className="addnewuserbtn" color="primary" onClick={this.toggle}>Add new User {this.props.buttonLabel}</Button>
         <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
           <ModalHeader toggle={this.toggle} charCode="X">Create New User</ModalHeader>
-          <AddUserForm/>
+          <New/>
           <ModalFooter>
             <Button color="primary" onClick={this.toggle}>Add</Button>
             <Button color="secondary" onClick={this.toggle}>Cancel</Button>

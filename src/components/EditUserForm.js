@@ -40,7 +40,7 @@ const EditUserForm = props => {
 
             <FormGroup>
               <Label for="age">Age</Label>
-              <Input type="text"  required name="age"  value={user.age}  onChange={handleInputChange}/>
+              <Input type="number"  required name="age"  value={user.age}  onChange={handleInputChange}/>
             </FormGroup>
 
             <FormGroup>
